@@ -2,9 +2,7 @@
 
 ## 2.5 Docker Composeでマルチコンテナを実行する
 
-### 2.5.1 docker-composeによるコンテナの実行
-
-#### コンテナ起動時のプロビジョニング定義
+### コンテナ起動時のプロビジョニング定義
 
 docker-compose.ymlに定義する
 ```
@@ -18,14 +16,14 @@ services:
 - ```echo``` 配置したディレクトリ名 + 指定した値がコンテナ名となる
 
 
-#### コンテナの作成・実行
+### コンテナの作成・実行
 
 docker-compose.ymlを配置したディレクトリ内で実行。2度実行しても新たなコンテナは作成されない
 ```
 $ docker-compose up -d
 ```
 
-#### コンテナの停止・削除
+### コンテナの停止・削除
 
 コンテナ削除まで行われる。
 ```
@@ -42,7 +40,7 @@ $ docker-compose stop
 $ docker-compose start
 ```
 
-#### イメージをDockerfileからビルドしてコンテナを実行する
+### イメージをDockerfileからビルドしてコンテナを実行する
 
 docker-compose.yml
 ```
