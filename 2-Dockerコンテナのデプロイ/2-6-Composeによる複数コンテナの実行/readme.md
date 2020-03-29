@@ -77,6 +77,6 @@ http://localhost:8080に接続し、[Jenkinsの管理] -> [ノードの管理] -
     - 種類: SSH ユーザ名と秘密鍵 
     - ユーザ名: jenkins
     - 秘密鍵: 直接入力 <./jenkins_home/.ssh/id_rsa>
-  -  	Host Key Verification Strategy; Non verifying Verification Strategy
+  - Host Key Verification Strategy; Non verifying Verification Strategy
   - 高度な設定
     - Javaのパス: /usr/local/openjdk-8/bin/java
