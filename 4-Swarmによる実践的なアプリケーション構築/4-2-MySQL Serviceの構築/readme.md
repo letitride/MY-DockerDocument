@@ -96,6 +96,9 @@ networks:
   todoapp:
     external: true
 ```
+```
+$ docker exec -it manager docker stack deploy -c /stack/todo-mysql.yml todo_mysql
+```
 
 ### MySQLコンテナを確認し、初期データを投入する
 
