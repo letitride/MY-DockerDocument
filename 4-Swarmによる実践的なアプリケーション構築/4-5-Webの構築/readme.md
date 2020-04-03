@@ -10,7 +10,6 @@ $ git clone https://github.com/gihyodocker/todoweb
 ```
 $ docker image build -t ch04/todoweb:latest .
 $ docker image tag ch04/todoweb:latest localhost:5000/ch04/todoweb:latest
-
 ```
 
 $ cp todonginx/etc/nginx/conf.d/public.conf.tmpl todonginx/etc/nginx/conf.d/nuxt.conf.tmpl
@@ -47,6 +46,7 @@ ENTRYPOINT [ \
       "/etc/nginx/conf.d/nuxt.conf", \
       "--" \
 ]
+```
 ```
 $ docker image build -f Dockerfile-nuxt -t ch04/nginx-nuxt:latest .
 $ docker image tag ch04/nginx-nuxt:latest localhost:5000/ch04/nginx-nuxt:latest
